@@ -241,7 +241,7 @@
 //	}
 //
 // where texthtml is the text file as rendered by the
-// golang.org/x/website/internal/texthtml package.
+// github.com/matttproud/yourtour/internal/texthtml package.
 // In the texthtml.Config, GoComments is set to true for
 // file names ending in .go;
 // the h URL query parameter, if present, is passed as Highlight,
@@ -318,8 +318,8 @@ import (
 	"sync"
 
 	"github.com/evanw/esbuild/pkg/api"
-	"golang.org/x/website/internal/spec"
-	"golang.org/x/website/internal/texthtml"
+	"github.com/matttproud/yourtour/internal/spec"
+	"github.com/matttproud/yourtour/internal/texthtml"
 )
 
 // A Site is an http.Handler that serves requests from a file system.

@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/matttproud/yourtour"
 	"golang.org/x/tools/present"
-	"golang.org/x/website"
 )
 
 var (

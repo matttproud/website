@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/website/internal/blog/atom"
-	"golang.org/x/website/internal/web"
+	"github.com/matttproud/yourtour/internal/blog/atom"
+	"github.com/matttproud/yourtour/internal/web"
 )
 
 const maxFeed = 10

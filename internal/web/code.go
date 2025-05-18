@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"golang.org/x/website/internal/texthtml"
+	"github.com/matttproud/yourtour/internal/texthtml"
 )
 
 func (s *siteDir) code(file string, arg ...interface{}) (_ template.HTML, err error) {

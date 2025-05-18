@@ -4,7 +4,7 @@
 
 package main
 
-import "golang.org/x/website/internal/tour"
+import "github.com/matttproud/yourtour/internal/tour"
 
 func main() {
 	tour.Main()

@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/website/internal/web"
+	"github.com/matttproud/yourtour/internal/web"
 )
 
 const playgroundURL = "https://play.golang.org"

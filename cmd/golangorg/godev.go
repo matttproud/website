@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/website/internal/web"
+	"github.com/matttproud/yourtour/internal/web"
 )
 
 // newest returns the pages sorted newest first,

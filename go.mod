@@ -1,4 +1,4 @@
-module golang.org/x/website
+module github.com/matttproud/yourtour
 
 go 1.23.0
 

@@ -8,6 +8,7 @@ import (
 	"flag"
 	"html/template"
 	"io"
+	"io/fs"
 	"log"
 	"net"
 	"net/http"
@@ -18,8 +19,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/matttproud/yourtour/internal/webtest"
 	"golang.org/x/tools/playground/socket"
-	"golang.org/x/website/internal/webtest"
 )
 
 const (
@@ -30,11 +31,23 @@ var (
 	httpListen  *string
 	openBrowser *bool
 	httpAddr    string
+	overlayPath string
 )
+
+type overlay struct {
+	FS []fs.FS
+}
+
+func (o *overlay) Open(name string) (fs.File, error) {
+	return nil, nil
+}
+
+var _ = (fs.FS).Open
 
 func Main() {
 	httpListen = flag.String("http", "127.0.0.1:3999", "host:port to listen on")
 	openBrowser = flag.Bool("openbrowser", true, "open browser automatically")
+	flag.StringVar(&overlayPath, "overlay", "", "XXX")
 
 	flag.Parse()
 

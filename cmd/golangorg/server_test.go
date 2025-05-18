@@ -17,10 +17,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/matttproud/yourtour"
+	"github.com/matttproud/yourtour/internal/history"
+	"github.com/matttproud/yourtour/internal/webtest"
 	"golang.org/x/net/html"
-	"golang.org/x/website"
-	"golang.org/x/website/internal/history"
-	"golang.org/x/website/internal/webtest"
 )
 
 func TestWeb(t *testing.T) {

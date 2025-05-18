@@ -15,7 +15,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"golang.org/x/website/internal/web"
+	"github.com/matttproud/yourtour/internal/web"
 )
 
 type playVersion struct {

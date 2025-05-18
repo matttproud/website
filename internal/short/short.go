@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"cloud.google.com/go/datastore"
-	"golang.org/x/website/internal/memcache"
+	"github.com/matttproud/yourtour/internal/memcache"
 )
 
 // useMemcache controls whether to use Redis.

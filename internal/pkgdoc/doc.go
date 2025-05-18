@@ -28,8 +28,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/website/internal/api"
-	"golang.org/x/website/internal/web"
+	"github.com/matttproud/yourtour/internal/api"
+	"github.com/matttproud/yourtour/internal/web"
 )
 
 type docs struct {
